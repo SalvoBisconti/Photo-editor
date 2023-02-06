@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Itim&family=Roboto:ital,wght@0,400;0,700;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Itim", cursive;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background-image: url(./img/bg.jpg);
+  color: aliceblue;
+}
+h1 {
+  margin: 20px;
+  font-size: 3rem;
+}
+.imgDiv {
+  width: 80vw;
+  height: 530px;
+  box-shadow: 0 0 4px grey;
+}
+.image {
+  height: 100%;
+  width: 100%;
+}
+
+.input-img {
+  width: 128px;
+  overflow: hidden;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.input-img::before {
+  content: "Upload image";
+  color: black;
+  display: inline-block;
+  background: -webkit-linear-gradient(top, #f9f9f9, #e3e3e3);
+  border-radius: 3px;
+  padding: 5px 8px;
+  outline: none;
+  text-shadow: 1px 1px #fff;
+  font-weight: 700;
+  font-size: 14px;
+  height: 20px;
+  width: 80px;
+}
+
+.input-img::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.edit-element {
+  width: 80vw;
+  height: 50px;
+  border: 2px solid transparent;
+  border-radius: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  background: -webkit-linear-gradient(top, #f9f9f9, #e3e3e3);
+  color: black;
+  overflow-y: auto;
+  cursor: pointer;
+}
+
+.reset-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.reset-btn img {
+  width: 30px;
+}
+
+.imgDiv {
+  background-color: rgba(0, 0, 0, 0.611);
+}

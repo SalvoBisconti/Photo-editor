@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PhotoDotCom</title>
+    <link rel="icon" type="image/png" href="./img/favicon.png">
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script.js" type="module"></script>
+  </head>
+  <body>
+    <h1>PhotoDotCom</h1>
+    <div class="form">
+     
+      <input class="input-img" type="file" accept="image/*" name="img" />
+    </div>
+    <div class="edit-element">
+      <label for="greyscale">Greyscale</label>
+      <input
+        type="range"
+        name="greyscale"
+        value="0"
+        id="greyscale"
+        class="greyscale"
+      />
+      <label for="saturate">Saturate</label>
+      <input type="range" name="saturate" id="saturate" class="saturate" />
+      <label for="sepia">Sepia</label>
+      <input type="range" name="sepia" id="sepia" value="0" class="sepia" />
+      <label for="contrast">Contrast</label>
+      <input
+        type="range"
+        name="contrast"
+        id="contrast"
+        value="50"
+        class="contrast"
+      />
+      <button class="reset-btn"><img src="./img/return.png" alt="" /></button>
+    </div>
+    <div class="imgDiv">
+  </body>
+</html>
